@@ -4,9 +4,7 @@ import { createServer } from "http";
 const httpServer = createServer();
 
 const io = new Server(httpServer, {
-  cors: {
-    origin:"*"
-  },
+  cors: { origin: "*" },
 });
 
 io.on("connection", (socket) => {
@@ -16,7 +14,6 @@ io.on("connection", (socket) => {
     io.emit("message", `${socket.id.substring(0, 5)}: ${data}`);
   });
 });
-
 httpServer.listen(8000, () => {
   console.log("Server Listening at port 8000.");
 });
