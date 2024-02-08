@@ -1,4 +1,4 @@
-const socket = io("ws://localhost:8000");
+const socket = io("https://chat-app-2cwb.onrender.com/");
 
 //  All Inputs
 const msgInput = document.querySelector("#message");
