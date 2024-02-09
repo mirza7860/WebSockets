@@ -1,4 +1,4 @@
-# WebSocket Learning Project
+# WebSocket 
 
 Welcome to the WebSocket Learning Project repository! This project is designed to guide you through the process of learning WebSocket concepts and building a complete project.
 
@@ -155,11 +155,6 @@ Explore each folder to delve deeper into WebSocket and Socket.io concepts, gradu
   - Commit your changes: git commit -m 'Add some feature'.
   - Push to the branch: git push origin feature/your-feature-name.
   - Submit a pull request.
-
 ## License
 
 This learning project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
-
