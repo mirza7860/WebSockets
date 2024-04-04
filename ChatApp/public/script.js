@@ -107,14 +107,21 @@ function showUsers(users) {
 
 function showRooms(rooms) {
   roomList.textContent = "";
-  if (rooms) {
-    console.log(chatRoom.value);
-    roomList.innerHTML = `<em>Active Rooms : ${chatRoom.value} </em>`;
+
+  if (rooms && rooms.length > 0) {
+    roomList.innerHTML = `<em>Active Rooms: </em>`;
 
     rooms.forEach((room, i) => {
-      if (rooms.length > 1 && i !== rooms.length - 1) {
-        roomList.textContent += ",";
+      const roomElement = document.createElement("span");
+      roomElement.textContent = room;
+
+      if (i !== rooms.length - 1) {
+        roomElement.textContent += ", ";
       }
+
+      roomList.appendChild(roomElement);
     });
+  } else {
+    roomList.textContent = "No active rooms.";
   }
 }
